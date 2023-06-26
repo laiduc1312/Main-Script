@@ -16,7 +16,7 @@ local library = {
 	},
 	colors = {
 		main = Color3.fromRGB(100, 245, 245),
-		background = Color3.fromRGB(40, 40, 40),
+		background = Color3.fromRGB(45, 45, 45),
 		outerBorder = Color3.fromRGB(15, 15, 15),
 		innerBorder = Color3.fromRGB(73, 63, 73),
 		topGradient = Color3.fromRGB(35, 35, 35),
@@ -24,7 +24,7 @@ local library = {
 		sectionBackground = Color3.fromRGB(35, 34, 34),
 		section = Color3.fromRGB(176, 175, 176),
 		otherElementText = Color3.fromRGB(255, 255, 250),
-		elementText = Color3.fromRGB(255, 255, 250),
+		elementText = Color3.fromRGB(255, 228, 249),
 		elementBorder = Color3.fromRGB(20, 20, 20),
 		selectedOption = Color3.fromRGB(55, 55, 55),
 		unselectedOption = Color3.fromRGB(40, 40, 40),
