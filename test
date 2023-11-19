@@ -1229,7 +1229,7 @@ local Elite_Hunter_Status = ItemTab:AddLabel("Status")
     })
     
     local C = Status:AddSection({
-        Name = "Server Infomation"
+        Name = "Server Info"
     })
     
     function CheckAncientOneStatus()
@@ -1281,3 +1281,4 @@ local Elite_Hunter_Status = ItemTab:AddLabel("Status")
         end
     )
     
+    OrionLib:Init()
