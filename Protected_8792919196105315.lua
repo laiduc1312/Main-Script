@@ -1908,7 +1908,7 @@ end
   
 if World3 then
     V4:AddParagraph("Race V4","")
-    V4Tab:AddButton({
+    V4:AddButton({
         Name = "TP Temple Of Time",
         Callback = function()
                   Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
