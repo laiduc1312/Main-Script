@@ -57,7 +57,7 @@ ImageButton.Image = "http://www.roblox.com/asset/?id=15398448545"
 ImageButton.BorderSizePixel = 0
 ImageButton.AutoButtonColor = false
 ImageButton.MouseButton1Click:Connect(function()
-    game.VirtualInputManager:SendKeyEvent(true, "F4", false, game)
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, "F4", false, game)
 end)
 
 
@@ -1463,4 +1463,3 @@ spawn(function()
 end)
     
     OrionLib:Init()
-
