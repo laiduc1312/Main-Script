@@ -1165,6 +1165,7 @@ spawn(function()
 end)
 
 ItemTab:AddParagraph("Elite [Third Sea]","")
+local EliteProgress = ItemTab:AddLabel("")
 spawn(function()
     pcall(function()
         while wait() do
@@ -1172,7 +1173,6 @@ spawn(function()
         end
     end)
 end)
-local EliteProgress = ItemTab:AddLabel("")
 local Elite_Hunter_Status = ItemTab:AddLabel("Status")
 
 
@@ -1311,11 +1311,11 @@ Setting:AddButton({
 Setting:AddButton({
 	Name = "Start Raid",
 	Callback = function()
-      		        if World2 then
-      		            fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
-      		        elseif World3 then
-      		            fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
-      		        end
+      	if World2 then
+      		fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
+      	elseif World3 then
+      		fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
+      	end
   	end    
 }) 
 
