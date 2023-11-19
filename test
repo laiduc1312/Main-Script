@@ -1200,12 +1200,14 @@ spawn(function()
     end
 end)
 
-ItemTab:AddParagraph("Elite Hunter","")
+ItemTab:AddParagraph("Elite Hunter","Farm Sea 3")
     
 local EliteProgress = ItemTab:AddLabel("")
 
 spawn(function()
-    while wait() do
-        EliteProgress:Set("Elite Progress : "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
-    end
+    pcall(function()
+        while wait() do
+            EliteProgress:Set("Elite Progress : "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))
+        end
+    end)
 end)
