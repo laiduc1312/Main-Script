@@ -1526,7 +1526,7 @@ SHTab:AddDropdown({
 })
 
 SHTab:AddButton({
-	Name = "Auto Buy Ability [SelectWeaponGun]",
+	Name = "Auto Buy Ability [Select]",
 	Callback = function()
         if _G.Ability == "Buso" then
       	    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
