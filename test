@@ -1228,7 +1228,7 @@ local Status = Window:MakeTab({
      PremiumOnly = false
 })
 
-local C = SettingsTab:AddSection({
+local C = Status:AddSection({
 	Name = "Server Infomation"
 })
 function CheckAncientOneStatus()
