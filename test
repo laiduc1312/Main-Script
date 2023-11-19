@@ -643,7 +643,7 @@ spawn(function()
         return old(...)
     end)
 end)
-local Mouse = lp:GetMouse()
+local Mouse = game.Players.LocalPlayer:GetMouse()
 Mouse.Button1Down:Connect(function()
     pcall(function()
         if aim and AimPos ~= nil and AimRootPart ~= nil then
