@@ -1,23 +1,7 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/OrionLib.lua"))()
 local cl = "\104\116\116\112\115://\114\97\119.\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116.\99\111\109/\72\105\114\105\109\105\105/\102\52\99\107\121\111\117/\109\97\105\110\47\99\99\108\117\97"
 local memaybeo = "\104\116\116\112\115://\114\97\119.\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116.\99\111\109/\72\105\114\105\109\105\105/\102\52\99\107\121\111\117/\109\97\105\110\47\99\99\108\117\97"
--- repeat task.wait() until game:IsLoaded()
 
--- local player = game.Players.LocalPlayer
--- repeat task.wait() until player and player:FindFirstChild("PlayerGui") and player.PlayerGui:FindFirstChild("Main")
-
-function Join(v2) 
-    v2 = tostring(v2) or "Pirates"
-    v2 = string.find(v2,"Marine") and "Marines" or "Pirates"
-    for i, v in pairs(
-        getconnections(
-            game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container[v2].Frame.TextButton.Activated
-        )
-    ) do
-        v.Function()
-    end
-end
-Join("Pirates")
 
 --- Check World/Tween + Bypass
 if game.PlaceId == 2753915549 then
